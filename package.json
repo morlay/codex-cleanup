@@ -1,0 +1,19 @@
+{
+  "name": "codex-cleanup",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "codex-cleanup": "./src/bin/codex-cleanup.ts"
+  },
+  "scripts": {
+    "dry-run": "bun run ./src/bin/codex-cleanup.ts",
+    "apply": "bun run ./src/bin/codex-cleanup.ts --apply",
+    "apply:verbose": "bun run ./src/bin/codex-cleanup.ts --apply --verbose"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
